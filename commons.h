@@ -13,6 +13,4 @@
 #include <vector>
 
 
-std::vector<std::string> commandsDesc = { "install - install a package", "uninstall - uninstall a package", "unknown command specified." };
-
-
+std::array<std::string, 3> commandsDesc; commandsDesc = { "install - install a package", "uninstall - uninstall a package", "unknown command specified." };

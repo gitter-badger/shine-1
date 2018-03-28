@@ -11,8 +11,8 @@
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    std::cout << "PackMan version 0 (dev)";
-    
+    std::cout << "Shinemanager version 0 (dev)";
+
     if (argc == 0) {
         help("all");
     }
