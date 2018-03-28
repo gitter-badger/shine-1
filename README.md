@@ -1,1 +1,1 @@
-# shine
+# Shine Package Manager
