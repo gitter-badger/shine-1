@@ -5,3 +5,7 @@ An attempt at a cross platform package manager.
 ## Community Information
 For this project to fully come to fruition, the community must be involved.
 I need Shine Repo Curators to add software to the repositories. More information will come soon.
+
+## Repositories
+It's going to be some time until I get the Repositories set up. I will update this section
+once I do this.
