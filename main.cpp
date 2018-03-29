@@ -24,7 +24,7 @@ int main(int argc, const char * argv[]) {
       // Handle install or uninstall
       if (strcmp(argv[1], "install") == 0) {
 
-          std::cout << "installing stuf..." << '\n';
+          std::cout << "installing stuff..." << '\n';
         // Detect OS for running install script.
         #ifdef _WIN32
           /* TODO: Implement #ifdef _WIN64 for detecting 32-bit and
