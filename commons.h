@@ -13,11 +13,11 @@
 const int commandsAmt = 2;
 
 const std::string commandsDesc[commandsAmt] = {
-  "uninstall - uninstall a package",
-  "install - install a package"
+  "uninstall - uninstall a package: shine uninstall <PACKAGE_NAME>",
+  "install - install a package: shine install <PACKAGE_NAME>"
 };
 
 const std::string commandsDB[commandsAmt] = {
-  "USAGE for uninstall: \nshine uninstall <PACKAGE_NAME>",
-  "USAGE for install: \nshine install <PACKAGE_NAME>"
+  "uninstall",
+  "install"
 };

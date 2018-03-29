@@ -14,7 +14,7 @@ int main(int argc, const char * argv[]) {
     std::cout << "Shinemanager version 0 (dev) \n";
 
     if (argc <= 1) {
-      std::cout << "USAGE for shine \nAvailable commands: \n";
+      std::cout << "USAGE for shine \nAvailable commands: \n\n";
       for (size_t i = commandsAmt; i--;) {
         std::cout << commandsDesc[i] << "\n";
       }
