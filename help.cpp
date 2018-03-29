@@ -10,15 +10,17 @@
 #include <array>
 #include "commons.h"
 
-int commandIndex;
+std::string returnVal;
 
-extern std::string help(std::string command) {
-    
+std::string help(std::string command) {
+
     if (command == "all") {
-        commandIndex = commandsDesc.size();
+        for (int i = 0; i == commandsAmt - 1; i++) {
+          returnVal = commandsDesc[i];
+        }
     } else if (command != "all") {
-        
+
     }
-    
-    return commandsDesc[commandIndex];
+
+    return returnVal;
 }

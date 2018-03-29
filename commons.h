@@ -9,8 +9,11 @@
 //
 
 #include<iostream>
-#include <array>
-#include <vector>
 
+const int commandsAmt = 3;
 
-std::array<std::string, 3> commandsDesc; commandsDesc = { "install - install a package", "uninstall - uninstall a package", "unknown command specified." };
+std::string commandsDesc[commandsAmt] = {
+  "install - install a package",
+  "uninstall - uninstall a package",
+  "unknown command specified."
+};
