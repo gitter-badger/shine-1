@@ -10,10 +10,14 @@
 
 #include<iostream>
 
-const int commandsAmt = 3;
+const int commandsAmt = 2;
 
-std::string commandsDesc[commandsAmt] = {
-  "install - install a package",
+const std::string commandsDesc[commandsAmt] = {
   "uninstall - uninstall a package",
-  "unknown command specified."
+  "install - install a package"
+};
+
+const std::string commandsDB[commandsAmt] = {
+  "USAGE for uninstall: \nshine uninstall <PACKAGE_NAME>",
+  "USAGE for install: \nshine install <PACKAGE_NAME>"
 };
