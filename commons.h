@@ -10,14 +10,16 @@
 
 #include<iostream>
 
-const int commandsAmt = 2;
+const int COMMANDS_AMT = 2;
 
-const std::string commandsDesc[commandsAmt] = {
+const std::string COMMANDS_DESC[COMMANDS_AMT] = {
   "uninstall - uninstall a package: shine uninstall <PACKAGE_NAME>",
   "install - install a package: shine install <PACKAGE_NAME>"
 };
 
-const std::string commandsDB[commandsAmt] = {
+const std::string COMMANDS_DB[COMMANDS_AMT] = {
   "uninstall",
   "install"
 };
+
+std::string installItem;
