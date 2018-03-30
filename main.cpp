@@ -1,8 +1,8 @@
 //
 //  main.cpp
-//  Shinemanager
+//  Shine package manager
 //
-//  Created by Varun Somashekar on 3/28/18.
+//  Created by Varun Somashekar.
 //  Copyright © 2018 Varun Somashekar. All rights reserved.
 //
 
@@ -15,8 +15,8 @@ int main(int argc, const char * argv[]) {
 
     if (argc <= 2) {
       std::cout << "USAGE for shine \nAvailable commands: \n\n";
-      for (size_t i = commandsAmt; i--;) {
-        std::cout << commandsDesc[i] << "\n";
+      for (size_t i = COMMANDS_AMT; i--;) {
+        std::cout << COMMANDS_DESC[i] << "\n";
       }
       std::cout << std::endl;
     }
@@ -33,7 +33,8 @@ int main(int argc, const char * argv[]) {
         #elif __APPLE__
 
           std::cout << "You're running macOS!" << '\n';
-
+          installItem = argv[2];
+          std::cout << installItem << '\n';
         #elif __linux__
           std::cout << "You're running Linux!" << '\n';
         #elif __unix__
