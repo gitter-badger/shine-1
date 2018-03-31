@@ -19,5 +19,15 @@ void package_install(std::string package_name) {
   switch (yesOrNo) {
     case "yes":
       // Commence install
+      std::cout << "Commencing install process..." << '\n';
+    case "y":
+      // Commence install
+      std::cout << "Commencing install process..." << '\n';
+    case "no":
+      // Cancel install
+      std::cout << "Canceling install. Goodbye!" << '\n';
+    case "n":
+      // Cancel install
+      std::cout << "Canceling install. Goodbye!" << '\n';
   }
 }
