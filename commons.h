@@ -23,3 +23,4 @@ const std::string COMMANDS_DB[COMMANDS_AMT] = {
 };
 
 std::string installItem;
+bool yesOrNo;
