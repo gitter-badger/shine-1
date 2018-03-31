@@ -18,6 +18,4 @@ if [ -f /usr/bin/g++ ] then
 
   # List available repositories
   echo "available repositories: "
-
-  echo "Shine is now ready to use!"
 fi

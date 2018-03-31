@@ -31,10 +31,10 @@ int main(int argc, const char * argv[]) {
            64-bit operating systems. */
           std::cout << "You're running Windows!" << '\n';
         #elif __APPLE__
-
           std::cout << "You're running macOS!" << '\n';
           installItem = argv[2];
           std::cout << installItem << '\n';
+          
         #elif __linux__
           std::cout << "You're running Linux!" << '\n';
         #elif __unix__
