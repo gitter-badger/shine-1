@@ -30,32 +30,12 @@ int main(int argc, const char * argv[]) {
           /* TODO: Implement #ifdef _WIN64 for detecting 32-bit and
            64-bit operating systems. */
           std::cout << "You're running Windows!" << '\n';
-          installItem = argv[2];
-          std::cout << "Item to install:" << '\n';
-          std::cout << installItem << '\n' << "Continue? (Y/N)";
-
-          getline(std::cin, yesOrNo);
         #elif __APPLE__
           std::cout << "You're running macOS!" << '\n';
-          installItem = argv[2];
-          std::cout << "Item to install:" << '\n';
-          std::cout << installItem << '\n' << "Continue? (Y/N)";
-
-          getline(std::cin, yesOrNo);
         #elif __linux__
           std::cout << "You're running Linux!" << '\n';
-          installItem = argv[2];
-          std::cout << "Item to install:" << '\n';
-          std::cout << installItem << '\n' << "Continue? (Y/N) \n";
-
-          getline(std::cin, yesOrNo);
         #elif __unix__
           std::cout << "You're running UNIX!" << '\n';
-          installItem = argv[2];
-          std::cout << "Item to install:" << '\n';
-          std::cout << installItem << '\n' << "Continue? (Y/N)";
-
-          getline(std::cin, yesOrNo);
         #else
           std::cout << "Unknown OS version. Quitting." << '\n';
           return 0;
