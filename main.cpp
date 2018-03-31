@@ -35,18 +35,18 @@ int main(int argc, const char * argv[]) {
           std::cout << installItem << '\n' << "Continue? (Y/N)";
 
           getline(std::cin, yesOrNo);
-        // #elif __APPLE__
-        //   std::cout << "You're running macOS!" << '\n';
-        //   installItem = argv[2];
-        //   std::cout << "Item to install:" << '\n';
-        //   std::cout << installItem << '\n' << "Continue? (Y/N)";
-        // 
+        #elif __APPLE__
+          std::cout << "You're running macOS!" << '\n';
+          installItem = argv[2];
+          std::cout << "Item to install:" << '\n';
+          std::cout << installItem << '\n' << "Continue? (Y/N)";
+
           getline(std::cin, yesOrNo);
         #elif __linux__
           std::cout << "You're running Linux!" << '\n';
           installItem = argv[2];
           std::cout << "Item to install:" << '\n';
-          std::cout << installItem << '\n' << "Continue? (Y/N)";
+          std::cout << installItem << '\n' << "Continue? (Y/N) \n";
 
           getline(std::cin, yesOrNo);
         #elif __unix__
