@@ -9,6 +9,7 @@
 #include <iostream>
 #include "commons.h"
 
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Shinemanager version 0 (dev) \n";
@@ -23,23 +24,25 @@ int main(int argc, const char * argv[]) {
     if (argc == 3) {
       // Handle install or uninstall
       if (strcmp(argv[1], "install") == 0) {
-
           std::cout << "installing stuff..." << '\n';
-        // Detect OS for running install script.
-        #ifdef _WIN32
-          /* TODO: Implement #ifdef _WIN64 for detecting 32-bit and
-           64-bit operating systems. */
-          std::cout << "You're running Windows!" << '\n';
-        #elif __APPLE__
-          std::cout << "You're running macOS!" << '\n';
-        #elif __linux__
-          std::cout << "You're running Linux!" << '\n';
-        #elif __unix__
-          std::cout << "You're running UNIX!" << '\n';
-        #else
-          std::cout << "Unknown OS version. Quitting." << '\n';
-          return 0;
-        #endif
+          while (getline(repoStream, line)) {
+            repoStream >> line;
+            std::cout << line << '\n';
+            // Check if input is yes or no
+            switch (yesOrNo) {
+              case "yes":
+                // Commence install
+                std::cout << "Commencing install process..." << '\n';
+              case "y":
+                // Commence install
+                std::cout << "Commencing install process..." << '\n';
+              case "no":
+                // Cancel install
+                std::cout << "Canceling install. Goodbye!" << '\n';
+              case "n":
+                // Cancel install
+                std::cout << "Canceling install. Goodbye!" << '\n';
+          }
       }
     }
 

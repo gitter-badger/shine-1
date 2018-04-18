@@ -9,6 +9,7 @@
 //
 
 #include<iostream>
+#include <fstream>
 
 const int COMMANDS_AMT = 2;
 
@@ -24,3 +25,6 @@ const std::string COMMANDS_DB[COMMANDS_AMT] = {
 
 std::string installItem;
 std::string yesOrNo;
+
+std::ifstream repoStream("repositories.shine");
+std::string line;
