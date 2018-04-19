@@ -1,0 +1,4 @@
+# Project level gitignore file for Shine
+
+# Ignore binary files made by a cpp compiler
+*.out
