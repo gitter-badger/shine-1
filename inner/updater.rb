@@ -10,8 +10,9 @@ Net::HTTP.start("raw.githubusercontent.com") { |http|
 }
 
 # Check if the version is different
-File.open("my/file/path", "r") do |f|
+File.open("version", "r") do |f|
   f.each_line do |line|
     puts line
+    Integer(line)
   end
 end
