@@ -10,11 +10,15 @@ then
   cd shine
 
   # Compile Shine
-  g++ -o shine main.cpp > "Compiling Shine"
+  g++ -o shine shine/main.cpp > "Compiling Shine"
 
   # Set up the environment
   export PATH=`pwd`:$PATH
 
   # List available repositories
   echo "available repositories: "
+
+  # Finishing touches
+  curl https://raw.githubusercontent.com/flash76/shine/master/inner/version
+  mv version ../inner/
 fi
