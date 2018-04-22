@@ -2,6 +2,11 @@
 
 An attempt at a cross platform package manager.
 
+## Install Shine
+I have created an easy installer script to install Shine and set it up on your computer. Run one of the following.
+macOS/Linux:
+`curl `
+
 ## Community Information
 For this project to fully come to fruition, the community must be involved.
 I need Shine Repo Curators to add software to the repositories. More information will come soon.
