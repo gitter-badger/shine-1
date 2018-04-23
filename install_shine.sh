@@ -10,7 +10,8 @@ then
   cd shine
 
   # Compile Shine
-  g++ -o shine shine/main.cpp > "Compiling Shine"
+  echo "Compiling Shine"
+  g++ -o shine shine/main.cpp
   mkdir bin
   mv shine bin/
 
@@ -22,5 +23,6 @@ then
   then
     echo "macOS detected. Installing Shine into your account..."
     echo "export PATH=`pwd`/bin" >> ~/.bash_profile
+    echo "Running updates to complete installation..."
   fi
 fi
