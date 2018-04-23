@@ -11,12 +11,16 @@ then
 
   # Compile Shine
   g++ -o shine shine/main.cpp > "Compiling Shine"
-
-  # Set up the environment
-  export PATH=`pwd`:$PATH
+  mkdir bin
+  mv shine bin/
 
   # List available repositories
   echo "available repositories: "
 
   # Finishing touches
+  if [ "$OSTYPE" = "darwin17" ]
+  then
+    echo "macOS detected. Installing Shine into your account..."
+    echo "export PATH=`pwd`/bin" >> ~/.bash_profile
+  fi
 fi
