@@ -25,6 +25,3 @@ const std::string COMMANDS_DB[COMMANDS_AMT] = {
 
 std::string installItem;
 std::string yesOrNo;
-
-std::ifstream repoStream("repositories.shine");
-std::string line;
