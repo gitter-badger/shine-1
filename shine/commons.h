@@ -25,3 +25,5 @@ const std::string COMMANDS_DB[COMMANDS_AMT] = {
 
 std::string installItem;
 std::string yesOrNo;
+
+std::locale loc;

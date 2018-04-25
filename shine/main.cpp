@@ -14,6 +14,7 @@ int main(int argc, const char *argv[])
     // insert code here...
     std::cout << "Shinemanager version 0 (dev) \n";
 
+
     if (argc <= 2)
     {
         std::cout << "USAGE for shine \nAvailable commands: \n\n";
@@ -29,21 +30,25 @@ int main(int argc, const char *argv[])
         if (strcmp(argv[1], "install") == 0)
         {
             std::cout << "installing stuff..." << '\n';
-            std::getline(std::cin, yesOrNo);
+            std::cin >> yesOrNo;
+
+            for (std::string::size_type i=0; i<yesOrNo.length(); ++i)
+                std::cout << std::tolower(yesOrNo[i],loc);
+
             // Check if input is yes or no
-            if (yesOrNo.compare("yes") == 0) {
+            if (yesOrNo == "yes") {
                 // Commence install
                 std::cout << "Commencing install process..." << '\n';
             }
-            else if (yesOrNo.compare("y") == 0) {
+            else if (yesOrNo == "y") {
                 // Commence install
                 std::cout << "Commencing install process..." << '\n';
             }
-            else if (yesOrNo.compare("no") == 0) { 
+            else if (yesOrNo == "no") { 
                 // Cancel install
                 std::cout << "Canceling install. Goodbye!" << '\n';
             }
-            else if (yesOrNo.compare("n") == 0) { 
+            else if (yesOrNo == "n") { 
                 // Cancel install
                 std::cout << "Canceling install. Goodbye!" << '\n';
             }

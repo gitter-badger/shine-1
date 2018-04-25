@@ -7,14 +7,12 @@
 //
 
 #include <iostream>
+#include "commons.h"
 
 void install_package(std::string package_name) {
-  installItem = argv[2];
   std::cout << "Item to install:" << '\n';
   std::cout << installItem << '\n' << "Continue? (Y/N) \n";
-
-  getline(std::cin, tolower(yesOrNo));
-  std::cout << "Checking for updates..." << '\n';
+  
       // Detect OS for running install script.
       #ifdef _WIN32
         /* TODO: Implement #ifdef _WIN64 for detecting 32-bit and
