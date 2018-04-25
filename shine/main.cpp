@@ -7,6 +7,7 @@
 //
 
 #include <iostream>
+#include "install_package.cpp"
 #include "commons.h"
 
 int main(int argc, const char *argv[])
@@ -29,20 +30,29 @@ int main(int argc, const char *argv[])
         // Handle install or uninstall
         if (strcmp(argv[1], "install") == 0)
         {
+            installItem = argv[2];
+
             std::cout << "installing stuff..." << '\n';
-            std::cin >> yesOrNo;
+            
+            std::cout << "Item to install:" << '\n';
+            std::cout << installItem << '\n' << "Continue? (Y/N) ";
+            
+            getline(std::cin, yesOrNo);
 
             for (std::string::size_type i=0; i<yesOrNo.length(); ++i)
-                std::cout << std::tolower(yesOrNo[i],loc);
+                yesOrNo += std::tolower(yesOrNo[i],loc);
 
+            std::cout << yesOrNo;
             // Check if input is yes or no
             if (yesOrNo == "yes") {
                 // Commence install
                 std::cout << "Commencing install process..." << '\n';
+                install_package(installItem);
             }
             else if (yesOrNo == "y") {
                 // Commence install
                 std::cout << "Commencing install process..." << '\n';
+                install_package(installItem);
             }
             else if (yesOrNo == "no") { 
                 // Cancel install
