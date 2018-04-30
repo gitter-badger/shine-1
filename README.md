@@ -3,6 +3,8 @@
 An attempt at a cross platform package manager.
 
 ## Install Shine
+
+[![Join the chat at https://gitter.im/the-cross-platform-package-manager/Lobby](https://badges.gitter.im/the-cross-platform-package-manager/Lobby.svg)](https://gitter.im/the-cross-platform-package-manager/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 I have created an easy installer script to install Shine and set it up on your computer. Run one of the following.
 macOS/Linux:
 `curl -sS https://raw.githubusercontent.com/flash76/shine/master/install_shine.sh`
